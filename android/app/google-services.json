@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "695344691407",
+    "project_id": "urbaneats-3a570",
+    "storage_bucket": "urbaneats-3a570.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695344691407:android:ea9c31ba67ab0233b79fba",
+        "android_client_info": {
+          "package_name": "com.example.food_delivery1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjyfK5A17RKKhCWstRo-Zn2noFST6oTw8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
