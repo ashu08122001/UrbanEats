@@ -1,8 +1,14 @@
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:food_delivery1/admin/admin_login.dart';
+import 'package:food_delivery1/admin/home_admin.dart';
+import 'package:food_delivery1/pages/Home/Home.dart';
+
 
 import 'package:food_delivery1/pages/onboard%20pages/onboard.dart';
+
+import 'admin/addFood.dart';
 
 
 void main() async{

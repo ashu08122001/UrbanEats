@@ -2,7 +2,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:food_delivery1/pages/Home/Home.dart';
+
+import 'package:food_delivery1/pages/Home/bottomNav.dart';
 import 'package:food_delivery1/pages/Login%20Stuff/Login.dart';
 
 
@@ -29,15 +30,15 @@ class _SignUpState extends State<SignUp> {
         ScaffoldMessenger.of(context).showSnackBar((SnackBar(
           content: Text("Registered Successfully",style: TextStyle(fontSize: 20),),
         )));
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Home(),
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>BottomNav(),
         ));
       } on FirebaseAuthException catch(e){
-        if(e.code=='WeaK Password'){
+        if(e.code== "weak-password"){
           ScaffoldMessenger.of(context).showSnackBar((SnackBar(
             backgroundColor: Colors.white10,
             content: Text("Password is too Weak.",style: TextStyle(fontSize: 18),),
           )));
-        } else if(e.code=='Email already is in use'){
+        } else if(e.code== "email-already-in-use"){
           ScaffoldMessenger.of(context).showSnackBar((SnackBar(
             backgroundColor: Colors.white10,
             content: Text("Account already exists",style: TextStyle(fontSize: 18),),
